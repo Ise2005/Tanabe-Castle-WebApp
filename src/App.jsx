@@ -33,5 +33,17 @@ document.querySelector('#top-button').addEventListener('click', (event) => {
   const modelViewer = document.querySelector("model-viewer");
   modelViewer.setAttribute('camera-orbit', "0deg 0deg 50%");
 });
+document.querySelector('#bottom-button').addEventListener('click', (event) => {
+  const modelViewer = document.querySelector("model-viewer");
+  modelViewer.setAttribute('camera-orbit', "180deg 0deg 20%");
+});
+document.querySelector('#right-button').addEventListener('click', (event) => {
+  const modelViewer = document.querySelector("model-viewer");
+  modelViewer.setAttribute('camera-orbit', "270deg 0deg 5%");
+});
+document.querySelector('#left-button').addEventListener('click', (event) => {
+  const modelViewer = document.querySelector("model-viewer");
+  modelViewer.setAttribute('camera-orbit', "90deg 0deg 50%");
+});
 
 export default App;
