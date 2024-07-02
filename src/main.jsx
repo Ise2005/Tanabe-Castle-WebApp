@@ -3,5 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
+    <React.StrictMode>
+    <Router basename="/Tanabe-Castle-WebApp/">
+      <App />
+    </Router>
+  </React.StrictMode>,
 )
