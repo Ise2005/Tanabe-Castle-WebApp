@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Ise2005.github.io/Tanabe-Castle-WebApp",
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp -r dist docs",
