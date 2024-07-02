@@ -1,12 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { BrowserRouter as Router } from "react-router-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Appコンポーネントをインポートする
+import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-        <Router basename="/Tanabe-Castle-WebApp/">
-            <App />
-        </Router>
-    </React.StrictMode>,
-)
+      <Router basename="/Tanabe-Castle-WebApp/">
+        <App />
+      </Router>
+    </React.StrictMode>
+  );
+}
